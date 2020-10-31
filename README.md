@@ -1,18 +1,10 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
-## Your Task
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+This week's task was to create a daily calendar using HTML, CSS and jQuery. This application will also be using [Moment.js](https://momentjs.com/) to run its current time. When operating the calendar application, the User should be able to save their upcoming duties/activities by the hour. When the past hours has passed, User should not be able to input any text into the box nor save. User can only input and save text from the current hour or future hours. Once user saves the text, the page will automatically reload and the text will be inputted into the hour assigned. 
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+Github page:
 
+Repo page:
 
-## User Story
-
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
-
-
+GIF: 
