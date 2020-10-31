@@ -5,6 +5,6 @@ This week's task was to create a daily calendar using HTML, CSS and jQuery. This
 
 Github page:
 
-Repo page:
+Repo page: https://github.com/Victortran415/DailyPlanner
 
-GIF: 
+![](https://media.giphy.com/media/izOZrQU1GlQd3vz0yL/giphy.gif)
