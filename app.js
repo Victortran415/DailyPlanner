@@ -12,15 +12,15 @@ $(document).ready(function() {
             $(timeVal).addClass("bg-danger")
             $(timeVal).attr("disabled", true)
         } else if (currentHour === time) {
-            $(timeVal).addClass("bg-success text-light")
+            $(timeVal).addClass("bg-secondary text-white")
         } else {
-            $(timeVal).addClass("bg-secondary text-light")
+            $(timeVal).addClass("bg-success text-white")
         }
 
         if (timeCheck === null) {
             window.localStorage.setItem(time, "")
         } else if (timeCheck.length > 0 ) {
-            $(timeVal).attr("value", window.localStorage.getItem(time)) //NOTE: text not showing on textarea, need to rework
+            $(timeVal).attr("placeholder", window.localStorage.getItem(time)) // FIXME: text saves to the box, but difficult to see with font color
         }
     })
 
@@ -31,6 +31,7 @@ $(document).ready(function() {
         const text =(e.target.querySelector("textarea").value)
         console.log(text) //NOTE: //seeing if the text will appear to adding text
         window.localStorage.setItem(time, text)
+        location.reload(); // when saving text, the page will automatically reload
     })
     
 })
