@@ -26,6 +26,8 @@ input {
   border-radius: 0;
   border-bottom: 8px solid black;
   font-family: 'Merriweather', serif, italic;
+  text-shadow: #000 0px 0px 5px,   #000 0px 0px 5px,   #000 0px 0px 5px,
+             #000 0px 0px 5px,   #000 0px 0px 5px,   #000 0px 0px 5px; 
 
 }
 
