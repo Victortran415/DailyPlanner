@@ -3,6 +3,9 @@ body {
   font-size: 16px;
   line-height: 1;
   padding-bottom: 50px;
+  background-color: rgb(226, 197, 143);
+
+  background-position: center;
 }
 
 input {
@@ -17,9 +20,13 @@ input {
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  background-image: url(https://us.123rf.com/450wm/hilllander/hilllander1702/hilllander170200076/71916737-blank-daily-planner-notebook-with-pen-and-color-pencils-on-white-wooden-background.jpg?ver=6);
+  background-position: center;
+  color: rgb(209, 99, 26);
   border-radius: 0;
   border-bottom: 10px solid black;
+  font-family: 'Merriweather', serif, italic;
+
 }
 
 .description{
@@ -59,7 +66,7 @@ input {
 }
 
 #saveBtn {
-  border-left: 1px solid black;
+  border-left: 3px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #80dfff;
@@ -81,3 +88,4 @@ input {
 #time {
   font-size: 20px;
 }
+

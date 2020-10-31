@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    const currentTime = moment().format('MMMM Do YYYY, H:mm a');
+    const currentTime = moment().format('MMMM Do YYYY, h:mm a');
     $("#currentDay").text(currentTime)
-    const times = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
+    const hours = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 
-    times.forEach(time => {
+    hours.forEach(time => {
         const timeCheck = window.localStorage.getItem(time);
         const currentHour = moment().hour()
         const timeVal = "#" + time
@@ -28,9 +28,9 @@ $(document).ready(function() {
         e.preventDefault();
         const time = (e.target.querySelector("input").getAttribute("id"))
         console.log(time) //NOTE: //seeing if the time will appear to adding text
-        const text =(e.target.querySelector("input").value)
-        console.log(text) //NOTE: //seeing if the text will appear to adding text
-        window.localStorage.setItem(time, text)
+        const textInput =(e.target.querySelector("input").value)
+        console.log(textInput) //NOTE: //seeing if the text will appear to adding text
+        window.localStorage.setItem(time, textInput)
         location.reload(); // when saving text, the page will automatically reload
     })
     
