@@ -9,10 +9,10 @@ $(document).ready(function() {
         const timeVal = "#" + time
 
         if (currentHour > time) {
-            $(timeVal).addClass("bg-danger")
+            $(timeVal).addClass("bg-secondary text-dark")
             $(timeVal).attr("disabled", true)
         } else if (currentHour === time) {
-            $(timeVal).addClass("bg-secondary text-white")
+            $(timeVal).addClass("bg-primary text-white")
         } else {
             $(timeVal).addClass("bg-success text-white")
         }
@@ -20,15 +20,15 @@ $(document).ready(function() {
         if (timeCheck === null) {
             window.localStorage.setItem(time, "")
         } else if (timeCheck.length > 0 ) {
-            $(timeVal).attr("placeholder", window.localStorage.getItem(time)) // FIXME: text saves to the box, but difficult to see with font color
+            $(timeVal).attr("value", window.localStorage.getItem(time)) 
         }
     })
 
     $("form").on("submit", function (e) {
         e.preventDefault();
-        const time = (e.target.querySelector("textarea").getAttribute("id"))
+        const time = (e.target.querySelector("input").getAttribute("id"))
         console.log(time) //NOTE: //seeing if the time will appear to adding text
-        const text =(e.target.querySelector("textarea").value)
+        const text =(e.target.querySelector("input").value)
         console.log(text) //NOTE: //seeing if the text will appear to adding text
         window.localStorage.setItem(time, text)
         location.reload(); // when saving text, the page will automatically reload
